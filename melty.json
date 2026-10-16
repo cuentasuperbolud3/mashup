@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Dragon Ball in Los Santos",
+    "version": "1.0.0",
+    "author": "TuNombre",
+    "description": "Mashup que integra habilidades de Dragon Ball: Sparking! ZERO en Grand Theft Auto V Enhanced",
+    "host": {
+      "game": "gta-v-enhanced",
+      "version": "1.0",
+      "platform": "pc"
+    },
+    "companion": {
+      "game": "custom-dragon-ball-sparking-zero",
+      "version": "1.0",
+      "platform": "pc"
+    },
+    "assets": {
+      "scripts": [
+        "scripts/dbz_abilities.lua"
+      ],
+      "models": [
+        "assets/models/kamehameha.yft",
+        "assets/models/kamehameha.ytyp"
+      ],
+      "textures": [
+        "assets/textures/ki_blasts.ytd"
+      ],
+      "audio": [
+        "assets/audio/power_up.awc"
+      ]
+    },
+    "mappings": {
+      "abilities": {
+        "kamehameha": {
+          "source": "dbz_sparking_zero",
+          "target": "gta_v_enhanced",
+          "input_binding": "KEY_E",
+          "cooldown": 30
+        },
+        "instant_transmission": {
+          "source": "dbz_sparking_zero",
+          "target": "gta_v_enhanced",
+          "input_binding": "KEY_Q",
+          "cooldown": 15
+        },
+        "ki_blast": {
+          "source": "dbz_sparking_zero",
+          "target": "gta_v_enhanced",
+          "input_binding": "MOUSE_RIGHT",
+          "cooldown": 2
+        }
+      },
+      "transformations": {
+        "super_saiyan": {
+          "source": "dbz_sparking_zero",
+          "target": "gta_v_enhanced",
+          "input_binding": "KEY_F",
+          "duration": 60
+        }
+      }
+    },
+    "dependencies": [
+      "script-hook-v",
+      "ultimate-asi-loader"
+    ],
+    "compatibility": {
+      "min_melty_version": "0.9.0",
+      "tested_versions": ["1.0.0", "1.0.1"]
+    }
+  }
+}
